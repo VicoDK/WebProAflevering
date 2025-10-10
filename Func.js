@@ -1,6 +1,5 @@
 function checkform() 
 {
-    console.log("Hello World");
     
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
