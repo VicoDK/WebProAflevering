@@ -7,27 +7,27 @@ function checkform()
     
     CheckEmail(email);
     CheckPassword(password);
-    return true;
+    console.log("Form Submitted");
 }
 
 function CheckEmail(email)
 {
     var RegExEmail = /\S+@\S+\.([a-z]|[A-Z]){1,5}/g;
-    if (RegExEmail.test(name))
+    if (RegExEmail.test(email))
     {
-        console.log(name + " Name is valid");
+        console.log(email + " Email is valid");
     }
     else
     {
-        console.error(name + " Name is not valid");
+        console.error(email + " Email is not valid");
         return false;
     }
 }
 
 function CheckPassword(password)
 {
-    var RegExPassword = /[A-Z]+[a-z]+[0-9]/;
-    if (RegExPassword.test(password) && password.length >= 8)
+    var RegExPassword = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).+$/;
+    if (RegExPassword.test(password) && password.length > 7)
     {
         console.log(password + " password is valid");
     }
