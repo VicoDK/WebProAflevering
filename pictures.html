@@ -4,10 +4,13 @@
     <style>
     body 
     {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(236, 215, 158);
+        align-items: center;
+        display:flex;
+        flex-direction: column;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
         body {
             background-color: rgb(255, 0, 0);
         }
@@ -15,29 +18,53 @@
 
     img
     {
+        
         width: 100%;
         height: auto;
         max-width: 1000px;
-        object-fit: contain;
+       position: sticky;
+        border:rgb(155, 95, 39);
+        border-style:groove;
+        
+        
 
     }
     button
     {
         width: 200px;
         height: 60px;
-        font-size: 1.5em;
+        font-size: xx-large;
         padding: 10px 20px;
+       position: sticky;
+        
+        font-family:fantasy;
+        color:rgb(85, 34, 19);
+        background-color:rgb(236, 145, 71);
+    }
+    a:link
+    {
+        color:rgb(85, 34, 19);
+        background-color:rgb(236, 145, 71);
+        text-align:center;
+        font-size:x-large;
+        text-decoration:wavy;
+        position: sticky;
+        font-family:fantasy;
+        
+
+
     }
     </style>
 </head>
 <body>
-     <a href="Forside.HTML" title="pictures">main page</a>
-    <br>
-     <img src="https://i.pinimg.com/736x/49/e1/f2/49e1f2020cc06478661eccbce17b8e7d.jpg" tag="img"/>
-     <br>
-    <img src="https://i.pinimg.com/1200x/6e/d5/ec/6ed5ecff4a2af2252ddb805c9233041a.jpg" tag="img"/>
-    <br>
-    <img src="https://i.pinimg.com/736x/39/06/53/3906538fd42a5233c605cbcde414be42.jpg" tag="img"/>
-    <br>
-    <button >Post!</button>
+        <a href="Forside.HTML" title="pictures">main page</a>
+       <br>
+        <img src="https://i.pinimg.com/736x/49/e1/f2/49e1f2020cc06478661eccbce17b8e7d.jpg" tag="img"/>
+        <br>
+       <img src="https://i.pinimg.com/1200x/6e/d5/ec/6ed5ecff4a2af2252ddb805c9233041a.jpg" tag="img"/>
+       <br>
+       <img src="https://i.pinimg.com/736x/39/06/53/3906538fd42a5233c605cbcde414be42.jpg" tag="img"/>
+       <br>
+       <button >Post!</button>
+    
 </body>

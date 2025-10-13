@@ -5,36 +5,90 @@
     <style>
     body 
     {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(236, 215, 158);
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
         body {
             background-color: rgb(255, 0, 0);
         }
     }
+    .link1
+    {
+        color:rgb(85, 34, 19);
+        background-color:rgb(236, 145, 71);
+        text-align:center;
+        font-size:xx-large;
+        text-decoration:wavy;
+        font-family:fantasy;
+        
+
+
+    }
+    .link2
+    {
+        font-size:x-large;
+        background-color:rgb(224, 68, 40);
+        color:rgb(85, 34, 19);
+        text-decoration:solid;
+        font-family:fantasy;
+         
+         
+    }
+    .link3
+    {
+        font-size:x-large;
+        background-color:rgb(224, 68, 40);
+        color:rgb(85, 34, 19);
+        text-decoration:solid;
+        font-family:fantasy;
+        
+         
+    }
+    label
+    {
+        font-family:papyrus;
+        font-size:x-large;
+        
+         
+    }
+    .submit
+    {
+        font-family:papyrus;
+         width:100px;
+        
+    }
+    .box
+    {
+        width:500px;
+    
+    }
+
     </style>
 </head>
+
 <body>
-    <a href="pictures.html" title="pictures">pictures</a>
+    <a href="pictures.html" title="pictures" class="link1">pictures</a>
     <form onsubmit= "return checkform()" method="post">
-      <label for="email">email adress</label>
+      <label for="email">email address</label>
         <br>
-        <input type="text" name="email" id="email"/>
+        <input type="text" name="email" id="email" class="box"/>
         <br>   
         <label for="password">password</label>
         <br> 
-        <input type="password" name="password" id="password"/> 
+        <input type="password" name="password" id="password" class="box"/> 
         <br>
  
-        <input type="submit" name="submit" id="submit"/> 
+        <input type="submit" name="submit" id="submit" class="submit"/> 
     </form> 
    <ui>
+    <br>
         <li>
-            <a href="/register">registrer ny bruger</a>
+            <a href="/register" class = "link2">sign up</a>
         </li>
+        <br>
         <li>
-            <a href="/Login">Log ind</a>
+            <a href="/Login" class="link3">Log in</a>
         </li>
     </ui>
 
